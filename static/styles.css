@@ -1,0 +1,50 @@
+body {
+    font-family: Helvetica, Arial;
+    padding: 0 25px 25px 25px;
+    min-width: 720px;
+}
+.title, .desc, .slider-value-container {
+    display: inline-block;
+}
+.title,  .slider {
+    margin-right: 15px;
+}
+.desc, .slider-value-container {
+    color: rgb(128, 128, 128);
+}
+.desc {
+    margin-top: 0;
+}
+.slider-value-container {
+    margin: 0 0 20px 0;
+}
+/* a bit of range control styling for webkit */
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 340px;
+    height: 8px;
+    border-radius: 5px;
+    background: rgb(211, 211, 211);
+    outline: none;
+    position: relative;
+    top: -1px;
+
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px solid rgb(128, 128, 128);
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.slider-value {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.bliffoscope {
+    border: 1px solid rgb(63, 135, 166);
+}
